@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000; /* Màu nền đen */
+    color: white; /* Màu chữ trắng */
+    display: flex;
+    flex-direction: column; /* Sắp xếp theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều dọc */
+    align-items: center; /* Căn giữa theo chiều ngang */
+    height: 100vh; /* Chiều cao 100% màn hình */
+    margin: 0; /* Không có khoảng cách bên ngoài */
+}
+
+.title {
+    font-size: 90px; /* Kích thước chữ lớn */
+    text-align: center; /* Căn giữa */
+    margin-top: 5px;
+    margin-bottom: 20px; /* Khoảng cách giữa tiêu đề và khối */
+    color: rgb(0, 255, 13); /* Màu chữ trắng */
+}
+
+.container {
+    display: flex; /* Sử dụng flex để căn giữa hai khối */
+}
+
+.grid {
+    display: grid; /* Sử dụng grid cho lưới 3x3 */
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px; /* Khoảng cách giữa các ô */
+}
+
+.left-grid {
+    margin-right: 20px; /* Khoảng cách giữa hai lưới */
+}
+
+.left-grid div, .right-grid div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgb(81, 255, 0); /* Đường viền ô */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 0, 234); /* Màu nền ô */
+}
+
+.right-grid div {
+    background-color: rgb(60, 255, 0); /* Màu nền của lưới bên phải */
+    cursor: pointer; /* Hiển thị con trỏ khi di chuột qua */
+}
+
+.message {
+    margin-top: 20px; /* Khoảng cách giữa lưới và thông báo */
+    font-size: 20px; /* Kích thước chữ */
+    color: rgb(72, 255, 0); /* Màu chữ trắng */
+    text-align: center; /* Căn giữa thông báo */
+}
